@@ -7,6 +7,7 @@ import Loading from '../Loading';
 import Timer from '../Timer';
 import Score from '../Score';
 import db from '../../Shared/db';
+import shuffle from '../../Shared/shuffle';
 import 'rbx/index.css';
 
 const Game = () => {
@@ -29,7 +30,11 @@ const Game = () => {
   useEffect(() => {
     const handleData = (snap) => {
       const dbItems = snap.val()?.items;
-      if (dbItems) setItems(Object.values(dbItems));
+      if (dbItems) {
+        const itemArray = Object.values(dbItems);
+        const shuffled = shuffle(itemArray);
+        setItems(shuffled);
+      }
     };
 
     db.on('value', handleData);
