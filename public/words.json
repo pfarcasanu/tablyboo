@@ -1,0 +1,32 @@
+[
+  {
+    "word": "cat",
+    "banned": [
+      "dog",
+      "feline",
+      "nine",
+      "pet",
+      "tiger"
+    ]
+  },
+  {
+    "word": "smile",
+    "banned": [
+      "teeth",
+      "dentist",
+      "face",
+      "beautiful",
+      "happy"
+    ]
+  },
+  {
+    "word": "firefighter",
+    "banned": [
+      "policeman",
+      "ambulance",
+      "hose",
+      "everyday hero",
+      "helmet"
+    ]
+  }
+]
