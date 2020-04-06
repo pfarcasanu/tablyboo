@@ -21,6 +21,7 @@
 # firebase
 /.firebase
 src/Shared/config.js
+functions/password.js
 
 npm-debug.log*
 yarn-debug.log*

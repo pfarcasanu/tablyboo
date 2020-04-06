@@ -16,8 +16,6 @@ const Game = () => {
   const [gameIndex, setGameIndex] = useState(0);
   const [viewIndex, setViewIndex] = useState(0);
 
-  console.log(items);
-
   const play = () => {
     setPlaying(true);
     setScore(0);
