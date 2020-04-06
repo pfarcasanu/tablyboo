@@ -3,7 +3,6 @@ import {
   Input, Column, Field, Label, Control, Block, Button, Box,
 } from 'rbx';
 import db from '../../Shared/db';
-import uuid from '../../Shared/uuid';
 
 const Add = () => {
   const [word, setWord] = useState('');
@@ -11,9 +10,7 @@ const Add = () => {
 
   const submit = () => {
     if (!word.length || !banned.length) return;
-    const id = uuid();
-    db.child('items').child(id).set({
-      id,
+    db.child('items').child(word).set({
       word,
       banned: banned.split(',').map((s) => s.trim()),
     });
