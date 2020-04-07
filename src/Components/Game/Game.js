@@ -6,7 +6,7 @@ import AppButtons from '../AppButtons';
 import Loading from '../Loading';
 import Timer from '../Timer';
 import Score from '../Score';
-import db from '../../Shared/db';
+import { db } from '../../Shared/firebase';
 import shuffle from '../../Shared/shuffle';
 import 'rbx/index.css';
 

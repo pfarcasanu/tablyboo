@@ -1,4 +1,5 @@
 /* eslint-disable no-bitwise */
+
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const password = require('./password.js');
@@ -12,16 +13,14 @@ admin.initializeApp({
 const db = admin.database();
 
 // addWord.js
-exports.addWord = functions.https.onRequest((request, response) => {
-  const { word, banned, id } = request.body;
-  if (password.password !== request.body.password) {
-    response.send('failed');
-    return;
+exports.addWord = functions.https.onCall((data, context) => {
+  const { word, banned } = data;
+  if (password.password !== data.password) {
+    return { error: 1 };
   }
-  db.ref(`items/${id}`).set({
-    id,
+  db.ref(`items/${word}`).set({
     word,
     banned: banned.split(',').map((s) => s.trim()),
   });
-  response.send('success');
+  return { error: 0 };
 });
