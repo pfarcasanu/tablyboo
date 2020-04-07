@@ -10,7 +10,7 @@ const Contribute = () => {
 
   const submit = () => {
     if (!word.length || !banned.length) return;
-    db.child('items').child(word).set({
+    db.child('suggested').child(word).set({
       word,
       banned: banned.split(',').map((s) => s.trim()),
     });
