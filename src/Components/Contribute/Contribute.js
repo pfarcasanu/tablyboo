@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
 import {
-  Input, Column, Field, Label, Control, Block, Button, Box,
+  Input, Column, Field, Label, Control, Block, Button, Box, Notification,
 } from 'rbx';
-import { db } from '../../Shared/firebase';
+import { functions } from '../../Shared/firebase';
 
 const Contribute = () => {
   const [word, setWord] = useState('');
   const [banned, setBanned] = useState('');
+  const [error, setError] = useState();
 
   const submit = () => {
     if (!word.length || !banned.length) return;
-    db.child('suggested').child(word).set({
-      word,
-      banned: banned.split(',').map((s) => s.trim()),
-    });
-    setWord('');
-    setBanned('');
+    const suggestWord = functions.httpsCallable('suggestWord');
+    suggestWord({ word, banned })
+      .then(() => {
+        setWord('');
+        setBanned('');
+        setError();
+      })
+      .catch(() => {
+        setError('something went wrong');
+      });
   };
 
   return (
@@ -45,6 +50,7 @@ const Contribute = () => {
             </Control>
           </Field>
           <Block />
+          {error && <Notification>{error}</Notification>}
           <Button.Group align="centered">
             <Button color="primary" onClick={() => submit()}>
               Submit

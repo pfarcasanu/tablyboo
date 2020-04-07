@@ -19,6 +19,7 @@
 .env.production.local
 
 # firebase
+*.log
 /.firebase
 src/Shared/config.js
 functions/password.js
