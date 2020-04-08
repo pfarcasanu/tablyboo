@@ -13,7 +13,6 @@ const Header = () => (
         />
         <b style={{ paddingLeft: 10 }}>tablyboo</b>
       </Navbar.Item>
-      <Navbar.Item />
       <Navbar.Burger />
     </Navbar.Brand>
     <Navbar.Menu>
