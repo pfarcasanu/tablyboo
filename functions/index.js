@@ -9,7 +9,10 @@ admin.initializeApp({
   databaseURL: 'https://tablyboo.firebaseio.com',
 });
 
-// dbj.js
+// util.js
+const parseBanned = (banned) => banned.split(',').map((s) => s.trim());
+
+// db.js
 const db = admin.database();
 
 // addWord.js
@@ -20,16 +23,38 @@ exports.addWord = functions.https.onCall((data) => {
   }
   db.ref(`items/${word}`).set({
     word,
-    banned: banned.split(',').map((s) => s.trim()),
+    banned: parseBanned(banned),
   });
   return { error: 0 };
 });
 
+// suggestWord.js
 exports.suggestWord = functions.https.onCall((data) => {
   const { word, banned } = data;
-  db.ref(`suggested/${word}`).set({
+  db.ref(`suggested/${word}`).set({ word, banned });
+  return { error: 0 };
+});
+
+// removeSuggested.js
+exports.removeSuggested = functions.https.onCall((data) => {
+  const { word } = data;
+  if (password.password !== data.password) {
+    return { error: 1 };
+  }
+  db.ref(`suggested/${word}`).remove();
+  return { error: 0 };
+});
+
+// addSuggested.js
+exports.addSuggested = functions.https.onCall((data) => {
+  const { word, banned } = data;
+  if (password.password !== data.password) {
+    return { error: 1 };
+  }
+  db.ref(`suggested/${word}`).remove();
+  db.ref(`items/${word}`).set({
     word,
-    banned: banned.split(',').map((s) => s.trim()),
+    banned: parseBanned(banned),
   });
   return { error: 0 };
 });

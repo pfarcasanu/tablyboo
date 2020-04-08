@@ -53,7 +53,7 @@ const Contribute = () => {
           {error && <Notification>{error}</Notification>}
           <Button.Group align="centered">
             <Button
-              color="primary"
+              color="link"
               onClick={() => submit()}
               disabled={!word.length || !banned.length}
             >
