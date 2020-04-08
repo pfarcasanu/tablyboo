@@ -21,7 +21,7 @@ const Header = () => (
           <Field kind="group">
             <Control>
               <Button as="a" color="success" href="/#/contribute">
-                <span>Suggest</span>
+                <span>Contribute</span>
               </Button>
             </Control>
           </Field>
