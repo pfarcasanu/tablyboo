@@ -58,7 +58,7 @@ const Contribute = () => {
               onClick={() => submit()}
               disabled={!word.length || !banned.length}
             >
-              Submit
+              Contribute
             </Button>
           </Button.Group>
         </Box>

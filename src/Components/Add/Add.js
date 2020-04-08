@@ -79,7 +79,7 @@ const Add = () => {
               onClick={() => submit()}
               disabled={!word.length || !banned.length}
             >
-              Submit
+              Add
             </Button>
           </Button.Group>
         </Box>
