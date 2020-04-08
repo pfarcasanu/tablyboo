@@ -21,7 +21,7 @@ const Header = () => (
         <Navbar.Item as="div">
           <Field kind="group">
             <Control>
-              <Button as="a" color="primary" href="/#/contribute">
+              <Button as="a" color="success" href="/#/contribute">
                 <span>Contribute</span>
               </Button>
             </Control>
