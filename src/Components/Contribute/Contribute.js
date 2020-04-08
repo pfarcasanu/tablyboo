@@ -25,6 +25,7 @@ const Contribute = () => {
 
   return (
     <div>
+      <Block />
       <Column size={6} offset={3}>
         <Box>
           <Field>
