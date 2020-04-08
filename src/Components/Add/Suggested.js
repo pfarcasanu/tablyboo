@@ -21,7 +21,9 @@ const Suggested = ({ cookies, savePassword, error }) => {
   };
 
   const removeSuggested = (suggestedWord) => {
+    console.log(cookies.pass);
     const password = cookies.pass || window.prompt('password');
+    console.log(password);
     const func = functions.httpsCallable('removeSuggested');
     func({ word: suggestedWord, password })
       .then((res) => {

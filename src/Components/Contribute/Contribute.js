@@ -24,7 +24,8 @@ const Contribute = () => {
   };
 
   return (
-    <div style={{ paddingTop: '10vh' }}>
+    <div>
+      <Block />
       <Column size={6} offset={3}>
         <Box>
           <Field>

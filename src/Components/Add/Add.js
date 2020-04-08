@@ -39,7 +39,9 @@ const Add = () => {
   };
 
   return (
-    <div style={{ paddingTop: '10vh' }}>
+    <div>
+      <Block />
+      {error && <Notification color="danger">{error}</Notification>}
       <Column size={6} offset={3}>
         <Suggested
           error={{ setError, raiseError }}
@@ -71,7 +73,6 @@ const Add = () => {
             </Control>
           </Field>
           <Block />
-          {error && <Notification color="danger">{error}</Notification>}
           <Button.Group align="centered">
             <Button
               color="link"
