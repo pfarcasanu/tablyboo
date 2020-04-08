@@ -11,6 +11,13 @@ import shuffle from '../../Shared/shuffle';
 import Footer from './Footer';
 import 'rbx/index.css';
 
+const gameStyle = {
+  padding: 10,
+  minHeight: '90vh',
+  display: 'flex',
+  flexFlow: 'column',
+};
+
 const Game = () => {
   const [items, setItems] = useState([]);
   const [playing, setPlaying] = useState(false);
@@ -49,8 +56,12 @@ const Game = () => {
   }
 
   return (
-    <div style={{ padding: 10, minHeight: '90vh' }}>
-      <Column size={6} offset={3}>
+    <div style={gameStyle}>
+      <Column
+        size={6}
+        offset={3}
+        style={{ flex: 1 }}
+      >
         <Field kind="group" multiline>
           <Timer playing={playing} stop={stop} />
           <Score score={score} />
