@@ -8,6 +8,7 @@ import Timer from '../Timer';
 import Score from '../Score';
 import { db } from '../../Shared/firebase';
 import shuffle from '../../Shared/shuffle';
+import Footer from './Footer';
 import 'rbx/index.css';
 
 const Game = () => {
@@ -48,7 +49,7 @@ const Game = () => {
   }
 
   return (
-    <div style={{ padding: 10 }}>
+    <div style={{ padding: 10, minHeight: '90vh' }}>
       <Column size={6} offset={3}>
         <Field kind="group" multiline>
           <Timer playing={playing} stop={stop} />
@@ -76,6 +77,7 @@ const Game = () => {
             )
         }
       </Column>
+      <Footer numItems={items.length} />
     </div>
   );
 };
