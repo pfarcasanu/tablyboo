@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Navbar, Field, Control, Button,
-} from 'rbx';
+import { Navbar } from 'rbx';
 
 const Header = () => (
   <Navbar color="link">
@@ -17,14 +15,11 @@ const Header = () => (
     </Navbar.Brand>
     <Navbar.Menu>
       <Navbar.Segment align="end">
-        <Navbar.Item as="div">
-          <Field kind="group">
-            <Control>
-              <Button as="a" color="dark" href="/#/contribute">
-                <span>Contribute</span>
-              </Button>
-            </Control>
-          </Field>
+        <Navbar.Item href="/#/list">
+          <span>Dictionary</span>
+        </Navbar.Item>
+        <Navbar.Item href="/#/contribute">
+          <span>Contribute</span>
         </Navbar.Item>
       </Navbar.Segment>
     </Navbar.Menu>

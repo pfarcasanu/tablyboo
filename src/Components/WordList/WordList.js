@@ -34,7 +34,7 @@ const WordList = () => {
       <Column size={8} offset={2}>
         <Input
           type="text"
-          placeholder="Search ..."
+          placeholder={`search from ${items.length} words ...`}
           style={{ marginBottom: 20 }}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
