@@ -13,7 +13,7 @@ import 'rbx/index.css';
 
 const gameStyle = {
   padding: 10,
-  minHeight: '85vh',
+  minHeight: '90vh',
   display: 'flex',
   flexFlow: 'column',
 };
