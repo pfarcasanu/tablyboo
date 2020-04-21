@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import {
   Message, Button, Icon, Tag,
 } from 'rbx';
@@ -18,7 +18,7 @@ const Word = ({ item }) => {
             size="small"
           >
             <Icon>
-              <FontAwesomeIcon icon={dropped ? faMinus : faPlus} />
+              <FontAwesomeIcon icon={dropped ? faCaretUp : faCaretDown} />
             </Icon>
           </Button>
         </Button.Group>
