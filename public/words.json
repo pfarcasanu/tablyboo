@@ -1,32 +1,652 @@
-[
-  {
-    "word": "cat",
-    "banned": [
-      "dog",
-      "feline",
-      "nine",
-      "pet",
-      "tiger"
-    ]
-  },
-  {
-    "word": "smile",
-    "banned": [
-      "teeth",
-      "dentist",
-      "face",
-      "beautiful",
-      "happy"
-    ]
-  },
-  {
-    "word": "firefighter",
-    "banned": [
-      "policeman",
-      "ambulance",
-      "hose",
-      "everyday hero",
-      "helmet"
-    ]
+{
+  "items" : {
+    "Acid" : {
+      "banned" : [ "drugs", "pH", "base", "LSD", "trip" ],
+      "word" : "Acid"
+    },
+    "Arthur" : {
+      "banned" : [ "aardvark", "cartoon", "DW", "Buster", "TV show" ],
+      "word" : "Arthur"
+    },
+    "Barack Obama" : {
+      "banned" : [ "president", "Hawaii", "Michelle Obama", "health care", "senator" ],
+      "word" : "Barack Obama"
+    },
+    "Barcade" : {
+      "banned" : [ "Dave & Busters", "games", "skeeball", "drink" ],
+      "word" : "Barcade"
+    },
+    "Beats" : {
+      "banned" : [ "Dr Dre", "headphones", "wireless", "music", "rhythm" ],
+      "word" : "Beats"
+    },
+    "Ben & Jerry's" : {
+      "banned" : [ "ice cream", "frozen", "pint", "dairy", "half-baked" ],
+      "word" : "Ben & Jerry's"
+    },
+    "Billy Joel" : {
+      "banned" : [ "singer", "piano", "New York", "uptown", "Madison Square Garden" ],
+      "word" : "Billy Joel"
+    },
+    "Britney Spears" : {
+      "banned" : [ "singer", "Toxic", "celebrity", "Justin Timberlake", "oops" ],
+      "word" : "Britney Spears"
+    },
+    "Burger King" : {
+      "banned" : [ "Whopper", "fast food", "late night", "chicken fries", "crown" ],
+      "word" : "Burger King"
+    },
+    "Canada Goose" : {
+      "banned" : [ "Jacket", "expensive", "down", "wear", "coyote" ],
+      "word" : "Canada Goose"
+    },
+    "Chess" : {
+      "banned" : [ "Board game", "rook", "bishop", "checkmate", "Magnus Carlson" ],
+      "word" : "Chess"
+    },
+    "Chicago" : {
+      "banned" : [ "Windy City", "Illinois", "downtown", "Sears Tower", "Millennium Park" ],
+      "word" : "Chicago"
+    },
+    "Chili" : {
+      "banned" : [ "Beans", "bowl", "cheese", "pepper", "ground beef" ],
+      "word" : "Chili"
+    },
+    "Christianity" : {
+      "banned" : [ "Jesus", "religion", "Bible", "Judaism", "cross" ],
+      "word" : "Christianity"
+    },
+    "Cold brew" : {
+      "banned" : [ "Coffee", "ice", "latte", "Starbucks", "drink" ],
+      "word" : "Cold brew"
+    },
+    "Cookie Monster" : {
+      "banned" : [ "Elmo", "Sesame Street", "blue", "puppet", "Big Bird" ],
+      "word" : "Cookie Monster"
+    },
+    "Darty" : {
+      "banned" : [ "Tailgate", "daytime", "alcohol", "backyard", "music" ],
+      "word" : "Darty"
+    },
+    "Doge" : {
+      "banned" : [ "Shiba Inu", "wow", "yellow", "meme", "Japan" ],
+      "word" : "Doge"
+    },
+    "Economics" : {
+      "banned" : [ "Supply", "business", "money", "Adam Smith", "major", "study" ],
+      "word" : "Economics"
+    },
+    "FaceTime" : {
+      "banned" : [ "video", "call", "iPhone", "camera", "friend" ],
+      "word" : "FaceTime"
+    },
+    "Facebook" : {
+      "banned" : [ "Mark Zuckerberg", "social media", "website", "privacy", "Twitter" ],
+      "word" : "Facebook"
+    },
+    "Finding Nemo" : {
+      "banned" : [ "Dori", "clownfish", "movie", "Pixar", "lost" ],
+      "word" : "Finding Nemo"
+    },
+    "France" : {
+      "banned" : [ "Paris", "Eiffel Tower", "country", "Europe", "croissant" ],
+      "word" : "France"
+    },
+    "Frankenstein" : {
+      "banned" : [ "monster", "Mary Shelley", "book", "green" ],
+      "word" : "Frankenstein"
+    },
+    "Gift" : {
+      "banned" : [ "Present", "Christmas", "birthday", "wrap", "card" ],
+      "word" : "Gift"
+    },
+    "Good Will Hunting" : {
+      "banned" : [ "Boston", "Matt Damon", "MIT", "Robin Williams", "smart" ],
+      "word" : "Good Will Hunting"
+    },
+    "Google" : {
+      "banned" : [ "search engine", "internet", "Bing", "Gmail", "Alphabet" ],
+      "word" : "Google"
+    },
+    "Harry Potter" : {
+      "banned" : [ "Hogwarts", "Hermione Grainger", "Magic", "Dumbledore", "JK Rowling" ],
+      "word" : "Harry Potter"
+    },
+    "Hot chocolate" : {
+      "banned" : [ "Drink", "cocoa", "marshmallow", "winter", "peppermint" ],
+      "word" : "Hot chocolate"
+    },
+    "Instagram" : {
+      "banned" : [ "app", "photos", "followers", "story", "post" ],
+      "word" : "Instagram"
+    },
+    "LaCroix" : {
+      "banned" : [ "seltzer", "sparkling", "bubbles", "beverage", "can" ],
+      "word" : "LaCroix"
+    },
+    "LeBron James" : {
+      "banned" : [ "Cleveland Cavaliers", "basketball player", "Kyrie Irving", "NBA", "Steph Curry" ],
+      "word" : "LeBron James"
+    },
+    "Lollapalooza" : {
+      "banned" : [ "Coachella", "music festival", "Chicago", "lineup", "concert" ],
+      "word" : "Lollapalooza"
+    },
+    "Love is Blind" : {
+      "banned" : [ "Netflix", "Jessica", "dating show", "pods", "reality TV" ],
+      "word" : "Love is Blind"
+    },
+    "Mac N Cheese" : {
+      "banned" : [ "Kraft", "butter", "pasta", "noodles", "dairy" ],
+      "word" : "Mac N Cheese"
+    },
+    "Mario" : {
+      "banned" : [ "Plumber", "Luigi", "brothers", "Super Nintendo", "red" ],
+      "word" : "Mario"
+    },
+    "McDonalds" : {
+      "banned" : [ "nuggets", "fast food", "restaurant", "Big Mac", "arch" ],
+      "word" : "McDonalds"
+    },
+    "Michael Scott" : {
+      "banned" : [ "Steve Carell", "Dwight", "Scranton", "Paper", "The Office" ],
+      "word" : "Michael Scott"
+    },
+    "Mickey Mouse" : {
+      "banned" : [ "Minnie", "Disney", "Pluto", "cartoon", "Goofy" ],
+      "word" : "Mickey Mouse"
+    },
+    "Minecraft" : {
+      "banned" : [ "Video game", "play", "creeper", "Ender Dragon", "survival" ],
+      "word" : "Minecraft"
+    },
+    "Netflix" : {
+      "banned" : [ "chill", "streaming", "watch", "movies", "TV" ],
+      "word" : "Netflix"
+    },
+    "New York" : {
+      "banned" : [ "Big Apple", "Manhattan", "state", "city", "Times Square" ],
+      "word" : "New York"
+    },
+    "Nintendo" : {
+      "banned" : [ "Mario", "DS", "Super Smash Brothers", "Company", "Games" ],
+      "word" : "Nintendo"
+    },
+    "Olive Garden" : {
+      "banned" : [ "Italian", "family", "breadsticks", "restaurant", "eat" ],
+      "word" : "Olive Garden"
+    },
+    "Penguin" : {
+      "banned" : [ "black", "Antarctica", "Happy Feet", "flightless", "bird" ],
+      "word" : "Penguin"
+    },
+    "Penny board" : {
+      "banned" : [ "Skate", "ride", "nickel", "wheels", "small" ],
+      "word" : "Penny board"
+    },
+    "Peter Pan" : {
+      "banned" : [ "Tinkerbell", "Neverland", "story", "Lost Boys", "flying" ],
+      "word" : "Peter Pan"
+    },
+    "Reddit" : {
+      "banned" : [ "Forum", "social media", "alien", "ask", "website" ],
+      "word" : "Reddit"
+    },
+    "Rick and Morty" : {
+      "banned" : [ "Adult Swim", "adventure", "cartoon", "inter-dimensional", "TV show" ],
+      "word" : "Rick and Morty"
+    },
+    "Russia" : {
+      "banned" : [ "Stalin", "Moscow", "country", "Soviet Union", "Putin" ],
+      "word" : "Russia"
+    },
+    "Shakespeare" : {
+      "banned" : [ "playwright", "Romeo & Juliet", "Hamlet", "England", "theatre" ],
+      "word" : "Shakespeare"
+    },
+    "Spider-Man" : {
+      "banned" : [ "Peter Parker", "Marvel", "Uncle Ben", "swing", "super hero" ],
+      "word" : "Spider-Man"
+    },
+    "SpongeBob" : {
+      "banned" : [ "pineapple", "Patrick", "Squidward", "Krabby Patty", "Bikini Bottom" ],
+      "word" : "SpongeBob"
+    },
+    "Spotify" : {
+      "banned" : [ "music", "app", "streaming", "songs", "Sweden" ],
+      "word" : "Spotify"
+    },
+    "Starbucks" : {
+      "banned" : [ "Coffee", "venti", "mermaid", "Frappuccino", "Seattle" ],
+      "word" : "Starbucks"
+    },
+    "Sushi" : {
+      "banned" : [ "raw", "seaweed", "roll", "fish", "Poke" ],
+      "word" : "Sushi"
+    },
+    "Target" : {
+      "banned" : [ "bullseye", "superstore", "red", "shopping", "grocery" ],
+      "word" : "Target"
+    },
+    "Taylor Swift" : {
+      "banned" : [ "Singer", "country", "Reputation", "Kanye West", "celebrity" ],
+      "word" : "Taylor Swift"
+    },
+    "Tesla" : {
+      "banned" : [ "Elon Musk", "electric", "car", "SpaceX", "model" ],
+      "word" : "Tesla"
+    },
+    "Tom & Jerry" : {
+      "banned" : [ "cartoon", "cat", "mouse", "chase", "TV show" ],
+      "word" : "Tom & Jerry"
+    },
+    "Trader Joe's" : {
+      "banned" : [ "food", "grocery store", "shopping", "brand", "mom" ],
+      "word" : "Trader Joe's"
+    },
+    "Uber" : {
+      "banned" : [ "Lyft", "rideshare", "app", "taxi", "drive" ],
+      "word" : "Uber"
+    },
+    "Unicorn" : {
+      "banned" : [ "Narwhal", "horn", "horse", "Harry Potter", "magical", "fictional" ],
+      "word" : "Unicorn"
+    },
+    "Valentine's Day" : {
+      "banned" : [ "heart", "cupid", "love", "holiday", "flowers" ],
+      "word" : "Valentine's Day"
+    },
+    "Vine" : {
+      "banned" : [ "TikTok", "seven seconds", "social media", "video", "grape" ],
+      "word" : "Vine"
+    },
+    "Vineyard Vines" : {
+      "banned" : [ "Preppy", "whale", "Martha", "long-sleeve tee", "expensive" ],
+      "word" : "Vineyard Vines"
+    },
+    "White claw" : {
+      "banned" : [ "Truly", "seltzer", "drink", "spiked", "alcohol" ],
+      "word" : "White claw"
+    },
+    "Wii" : {
+      "banned" : [ "fit", "Smash", "Nintendo", "console", "video games" ],
+      "word" : "Wii"
+    },
+    "Winnie the Pooh" : {
+      "banned" : [ "bear", "honey", "tigger", "Christopher Robin", "Hundred Acre Woods" ],
+      "word" : "Winnie the Pooh"
+    },
+    "Yao Ming" : {
+      "banned" : [ "Houston Rockets", "tall", "basketball", "China", "feet" ],
+      "word" : "Yao Ming"
+    },
+    "Yoshi" : {
+      "banned" : [ "Mario", "dinosaur", "green", "egg", "video game" ],
+      "word" : "Yoshi"
+    },
+    "Zeus" : {
+      "banned" : [ "Greek god", "Jupiter", "lightning", "Olympus", "immortal" ],
+      "word" : "Zeus"
+    },
+    "advice" : {
+      "banned" : [ "give", "help", "counsel", "recommendation" ],
+      "word" : "advice"
+    },
+    "airpods" : {
+      "banned" : [ "Apple", "earbuds", "music", "headphone", "wireless" ],
+      "word" : "airpods"
+    },
+    "aquarium" : {
+      "banned" : [ "water", "fish", "tank", "Sea World", "dolphin" ],
+      "word" : "aquarium"
+    },
+    "bacon" : {
+      "banned" : [ "egg", "canadian", "crispy", "breakfast", "pork" ],
+      "word" : "bacon"
+    },
+    "ballet" : {
+      "banned" : [ "dance", "slippers", "tutu", "Joffrey", "pointe" ],
+      "word" : "ballet"
+    },
+    "banana" : {
+      "banned" : [ "monkey", "split", "fruit", "yellow", "republic" ],
+      "word" : "banana"
+    },
+    "bandage" : {
+      "banned" : [ "cut", "heal", "first aid", "blood", "wrap" ],
+      "word" : "bandage"
+    },
+    "bed" : {
+      "banned" : [ "sleep", "mattress", "night", "breakfast", "time" ],
+      "word" : "bed"
+    },
+    "blender" : {
+      "banned" : [ "smoothie", "mix", "shake", "appliance", "kitchen" ],
+      "word" : "blender"
+    },
+    "blue" : {
+      "banned" : [ "color", "rainbow", "primary", "sad" ],
+      "word" : "blue"
+    },
+    "butter" : {
+      "banned" : [ "spread", "bread", "oil", "stick", "popcorn" ],
+      "word" : "butter"
+    },
+    "carrot cake" : {
+      "banned" : [ "cream cheese", "dessert", "orange", "walnuts", "raisins" ],
+      "word" : "carrot cake"
+    },
+    "cashew" : {
+      "banned" : [ "nut", "legume", "trail mix", "food", "allergic" ],
+      "word" : "cashew"
+    },
+    "cat" : {
+      "banned" : [ "dog", "feline", "nine lives", "pet", "tiger" ],
+      "word" : "cat"
+    },
+    "champagne" : {
+      "banned" : [ "wine", "sparkling", "bubbly", "pop", "alcohol" ],
+      "word" : "champagne"
+    },
+    "chips" : {
+      "banned" : [ "tortilla", "potato", "snack", "Lays", "food" ],
+      "word" : "chips"
+    },
+    "choke" : {
+      "banned" : [ "neck", "strangle", "kill", "breath", "asphyxiate" ],
+      "word" : "choke"
+    },
+    "cupcake" : {
+      "banned" : [ "frosting", "dessert", "sprinkles", "chocolate", "vanilla" ],
+      "word" : "cupcake"
+    },
+    "dream" : {
+      "banned" : [ "nightmare", "sleep", "sweet", "lucid", "imagination" ],
+      "word" : "dream"
+    },
+    "egg" : {
+      "banned" : [ "chicken", "omelette", "shell", "hatch", "yolk" ],
+      "word" : "egg"
+    },
+    "eyelash" : {
+      "banned" : [ "mascara", "hair", "curl", "extensions", "face" ],
+      "word" : "eyelash"
+    },
+    "ghost" : {
+      "banned" : [ "spirit", "Casper", "busters", "dead", "haunt" ],
+      "word" : "ghost"
+    },
+    "glasses" : {
+      "banned" : [ "eyes", "contacts", "lens", "sun", "see" ],
+      "word" : "glasses"
+    },
+    "glove" : {
+      "banned" : [ "compartment", "hand", "clothing", "mitten", "cold" ],
+      "word" : "glove"
+    },
+    "golden retriever" : {
+      "banned" : [ "dog", "pet", "happy", "yellow", "bark" ],
+      "word" : "golden retriever"
+    },
+    "grass" : {
+      "banned" : [ "green", "plant", "lawnmower", "yard", "blade" ],
+      "word" : "grass"
+    },
+    "haircut" : {
+      "banned" : [ "barber", "bangs", "scissors", "salon", "buzz" ],
+      "word" : "haircut"
+    },
+    "hammer" : {
+      "banned" : [ "nail", "tool", "head", "hit", "carpenter" ],
+      "word" : "hammer"
+    },
+    "hamster" : {
+      "banned" : [ "gerbil", "guinea pig", "cage", "pet", "rodent" ],
+      "word" : "hamster"
+    },
+    "hat" : {
+      "banned" : [ "cap", "wear", "head", "top", "clothing" ],
+      "word" : "hat"
+    },
+    "hedgehog" : {
+      "banned" : [ "porcupine", "Sonic", "spiky", "pet", "cute" ],
+      "word" : "hedgehog"
+    },
+    "homework" : {
+      "banned" : [ "school", "assignment", "backpack", "turn in" ],
+      "word" : "homework"
+    },
+    "honey" : {
+      "banned" : [ "bumblebee", "sweet", "tea", "mustard", "comb" ],
+      "word" : "honey"
+    },
+    "iPhone" : {
+      "banned" : [ "text", "Apple", "Steve Jobs", "FaceTime", "brand" ],
+      "word" : "iPhone"
+    },
+    "joke" : {
+      "banned" : [ "laugh", "funny", "comedian", "knock-knock", "punchline" ],
+      "word" : "joke"
+    },
+    "ketchup" : {
+      "banned" : [ "mustard", "tomato", "condiment", "hotdog", "Heinz" ],
+      "word" : "ketchup"
+    },
+    "kiss" : {
+      "banned" : [ "lips", "hug", "make out", "french", "Hershey" ],
+      "word" : "kiss"
+    },
+    "lips" : {
+      "banned" : [ "kiss", "mouth", "stick", "chapped", "face" ],
+      "word" : "lips"
+    },
+    "lipstick" : {
+      "banned" : [ "red", "makeup", "gloss", "mouth" ],
+      "word" : "lipstick"
+    },
+    "mask" : {
+      "banned" : [ "face", "cover", "COVID-19", "ski" ],
+      "word" : "mask"
+    },
+    "milk" : {
+      "banned" : [ "cow", "dairy", "2%", "drink", "lactose" ],
+      "word" : "milk"
+    },
+    "milkshake" : {
+      "banned" : [ "ice cream", "diner", "drink", "smoothie" ],
+      "word" : "milkshake"
+    },
+    "mistletoe" : {
+      "banned" : [ "Christmas", "kiss", "under", "holly", "plant" ],
+      "word" : "mistletoe"
+    },
+    "motorcycle" : {
+      "banned" : [ "bike", "Harley-Davidson", "Sons of Anarchy", "gang", "Hell's Angels" ],
+      "word" : "motorcycle"
+    },
+    "multiply" : {
+      "banned" : [ "cross", "times", "addition", "x", "two" ],
+      "word" : "multiply"
+    },
+    "napkin" : {
+      "banned" : [ "table", "wipe", "paper towel", "hands", "eat" ],
+      "word" : "napkin"
+    },
+    "panda" : {
+      "banned" : [ "bamboo", "China", "black", "bear", "Kung Fu" ],
+      "word" : "panda"
+    },
+    "peanut butter" : {
+      "banned" : [ "jelly", "allergic", "chunky", "Reese's", "sandwich" ],
+      "word" : "peanut butter"
+    },
+    "perfume" : {
+      "banned" : [ "cologne", "smell", "spray", "Chanel", "eau" ],
+      "word" : "perfume"
+    },
+    "pickle" : {
+      "banned" : [ "food", "cucumber", "brine", "Vlasic", "dill" ],
+      "word" : "pickle"
+    },
+    "pineapple" : {
+      "banned" : [ "tropical", "pina colada", "sweet", "fruit", "juice" ],
+      "word" : "pineapple"
+    },
+    "polaroid" : {
+      "banned" : [ "camera", "film", "instant", "photograph", "picture" ],
+      "word" : "polaroid"
+    },
+    "popcorn" : {
+      "banned" : [ "butter", "movie theatre", "caramel", "microwave", "snack" ],
+      "word" : "popcorn"
+    },
+    "pterodactyl" : {
+      "banned" : [ "dinosaur", "bird", "T-Rex", "prehistoric", "flying" ],
+      "word" : "pterodactyl"
+    },
+    "punch" : {
+      "banned" : [ "hit", "boxing", "fist", "fruit", "fight" ],
+      "word" : "punch"
+    },
+    "q-tip" : {
+      "banned" : [ "ear", "cotton swab", "stick", "clean" ],
+      "word" : "q-tip"
+    },
+    "refrigerator" : {
+      "banned" : [ "cold", "food", "kitchen", "freezer", "icebox" ],
+      "word" : "refrigerator"
+    },
+    "rocket" : {
+      "banned" : [ "blast", "NASA", "ship", "space" ],
+      "word" : "rocket"
+    },
+    "roof" : {
+      "banned" : [ "house", "ceiling", "shingles", "top" ],
+      "word" : "roof"
+    },
+    "run" : {
+      "banned" : [ "walk", "jog", "sprint", "go", "fast" ],
+      "word" : "run"
+    },
+    "s'more" : {
+      "banned" : [ "marshmallow", "campfire", "graham cracker", "dessert" ],
+      "word" : "s'more"
+    },
+    "safari" : {
+      "banned" : [ "Africa", "browser", "internet", "lion", "chrome" ],
+      "word" : "safari"
+    },
+    "salt" : {
+      "banned" : [ "pepper", "sodium", "food", "flavor", "seasoning" ],
+      "word" : "salt"
+    },
+    "seal" : {
+      "banned" : [ "blubber", "swim", "bark", "sea lion", "flipper" ],
+      "word" : "seal"
+    },
+    "seed" : {
+      "banned" : [ "grow", "garden", "plant", "sunflower" ],
+      "word" : "seed"
+    },
+    "sex" : {
+      "banned" : [ "condom", "pregnant", "gender", "fuck", "intercourse" ],
+      "word" : "sex"
+    },
+    "short" : {
+      "banned" : [ "tall", "height", "small", "stout", "little" ],
+      "word" : "short"
+    },
+    "skull" : {
+      "banned" : [ "Indiana Jones", "crossbones", "death", "skeleton", "poison" ],
+      "word" : "skull"
+    },
+    "smoothie" : {
+      "banned" : [ "blender", "Jamba Juice", "shake", "fruit", "drink" ],
+      "word" : "smoothie"
+    },
+    "snowflake" : {
+      "banned" : [ "cold", "winter", "flower", "snow", "fall", "storm" ],
+      "word" : "snowflake"
+    },
+    "snowman" : {
+      "banned" : [ "Frosty", "winter", "three", "carrot", "build" ],
+      "word" : "snowman"
+    },
+    "soap" : {
+      "banned" : [ "bubbles", "wash", "clean", "bar", "dish" ],
+      "word" : "soap"
+    },
+    "spoon" : {
+      "banned" : [ "fork", "utensil", "knife", "soup", "cuddle" ],
+      "word" : "spoon"
+    },
+    "step" : {
+      "banned" : [ "walk", "foot", "stairs", "stool" ],
+      "word" : "step"
+    },
+    "sugar" : {
+      "banned" : [ "sweet", "dessert", "saccharine", "cane", "cube" ],
+      "word" : "sugar"
+    },
+    "summer" : {
+      "banned" : [ "Vacation", "season", "spring", "winter", "days" ],
+      "word" : "summer"
+    },
+    "tape" : {
+      "banned" : [ "sticky", "roll", "Scotch", "duct", "glue" ],
+      "word" : "tape"
+    },
+    "television" : {
+      "banned" : [ "watch", "entertainment", "remote controller", "movie", "show" ],
+      "word" : "television"
+    },
+    "tennis" : {
+      "banned" : [ "ball", "court", "racket", "Roger Federer", "sport" ],
+      "word" : "tennis"
+    },
+    "tequila" : {
+      "banned" : [ "lime", "alcohol", "margarita", "shot", "salt" ],
+      "word" : "tequila"
+    },
+    "the Alps" : {
+      "banned" : [ "mountain", "Switzerland", "France", "skiing", "snow" ],
+      "word" : "the Alps"
+    },
+    "tickle" : {
+      "banned" : [ "laugh", "armpit", "feather", "fight", "foot" ],
+      "word" : "tickle"
+    },
+    "train" : {
+      "banned" : [ "railroad", "track", "transportation", "conductor", "Thomas" ],
+      "word" : "train"
+    },
+    "up" : {
+      "banned" : [ "down", "sky", "above", "balloon", "high" ],
+      "word" : "up"
+    },
+    "vampire" : {
+      "banned" : [ "blood", "Count Dracula", "garlic", "Twilight", "bat" ],
+      "word" : "vampire"
+    },
+    "wind" : {
+      "banned" : [ "breeze", "air", "blow", "gust" ],
+      "word" : "wind"
+    },
+    "wine" : {
+      "banned" : [ "alcohol", "grapes", "Barefoot", "moscato", "glass" ],
+      "word" : "wine"
+    },
+    "worm" : {
+      "banned" : [ "dirt", "gummy", "earth", "wiggle", "inch" ],
+      "word" : "worm"
+    },
+    "zebra" : {
+      "banned" : [ "black", "white", "horse", "Africa", "stripes" ],
+      "word" : "zebra"
+    },
+    "zombie" : {
+      "banned" : [ "The Walking Dead", "COD", "World War Z", "monster", "brains" ],
+      "word" : "zombie"
+    }
   }
-]
+}

@@ -6,7 +6,6 @@ import AppButtons from '../AppButtons';
 import Loading from '../Loading';
 import Timer from '../Timer';
 import Score from '../Score';
-import { db } from '../../Shared/firebase';
 import shuffle from '../../Shared/shuffle';
 import Footer from './Footer';
 import 'rbx/index.css';
@@ -36,17 +35,13 @@ const Game = () => {
   };
 
   useEffect(() => {
-    const handleData = (snap) => {
-      const dbItems = snap.val()?.items;
-      if (dbItems) {
-        const itemArray = Object.values(dbItems);
-        const shuffled = shuffle(itemArray);
-        setItems(shuffled);
-      }
-    };
-
-    db.on('value', handleData);
-    return () => { db.off('value', handleData); };
+    fetch('words.json')
+      .then((response) => response.json())
+      .then((json) => {
+        const wordList = Object.values(json.items);
+        const shuffledWords = shuffle(wordList);
+        setItems(shuffledWords);
+      });
   }, []);
 
   if (items.length === 0) {
