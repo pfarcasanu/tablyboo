@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from 'rbx';
+import constants from '../../Shared/constants';
 
 const Header = () => (
   <Navbar color="link">
@@ -18,7 +19,7 @@ const Header = () => (
         <Navbar.Item href="/#/list">
           <span>Dictionary</span>
         </Navbar.Item>
-        <Navbar.Item href="/#/contribute">
+        <Navbar.Item href={constants.CONTRIBUTE_LINK}>
           <span>Contribute</span>
         </Navbar.Item>
       </Navbar.Segment>

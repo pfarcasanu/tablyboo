@@ -1,4 +1,5 @@
 import React from 'react';
+import constants from '../../Shared/constants';
 
 const footerStyle = {
   textAlign: 'center',
@@ -13,7 +14,7 @@ const Footer = ({ numItems }) => (
     {' '}
     words and counting. Help expand the vocabulary by
     {' '}
-    <a href="/#/contribute">contributing</a>
+    <a href={constants.CONTRIBUTE_LINK}>contributing</a>
     .
   </div>
 );
